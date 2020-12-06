@@ -137,6 +137,7 @@ public class Main {
 					System.out.println("**********************");
 					
 					customersList.add(new Customer(id,fname, lname,phone,email,badge));
+					choose();
 					
 				break;
 				case 's':

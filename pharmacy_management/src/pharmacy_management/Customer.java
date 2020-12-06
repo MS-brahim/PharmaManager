@@ -10,9 +10,10 @@ public class Customer extends Person{
 	}
 
 	public Customer(long id, String fname, String lname, String phone, String email, long badge) {
-		super();
+		super(id, fname, lname, phone, email);
 		this.badge = badge;
 	}
+	
 
 	public long getBadge() {
 		return badge;

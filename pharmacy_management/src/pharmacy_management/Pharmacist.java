@@ -2,11 +2,14 @@ package pharmacy_management;
 
 public class Pharmacist extends Person {
 	
-	public Pharmacist() {
+	
 
+	public Pharmacist() {
+		super();
 	}
 
 	public Pharmacist(long id, String fname, String lname, String phone, String email) {
+		super(id, fname, lname, phone, email);
 	}
 
 	@Override
