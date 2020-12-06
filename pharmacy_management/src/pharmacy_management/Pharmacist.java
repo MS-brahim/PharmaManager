@@ -3,10 +3,11 @@ package pharmacy_management;
 public class Pharmacist extends Person {
 	
 	public Pharmacist() {
-		super();
-		// TODO Auto-generated constructor stub
+
 	}
 
+	public Pharmacist(long id, String fname, String lname, String phone, String email) {
+	}
 
 	@Override
 	public String toString() {

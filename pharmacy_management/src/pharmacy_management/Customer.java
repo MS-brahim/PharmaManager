@@ -4,8 +4,14 @@ public class Customer extends Person{
 	
 	private long badge;
 
+
 	public Customer() {
-	
+		super();
+	}
+
+	public Customer(long id, String fname, String lname, String phone, String email, long badge) {
+		super();
+		this.badge = badge;
 	}
 
 	public long getBadge() {

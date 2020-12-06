@@ -8,8 +8,17 @@ public class Person {
 	private String phone;
 	private String email;
 	
+	public Person(long id, String fname, String lname, String phone, String email) {
+		super();
+		this.id = id;
+		this.fname = fname;
+		this.lname = lname;
+		this.phone = phone;
+		this.email = email;
+	}
+
 	public Person() {
-		
+		super();
 	}
 
 	public long getId() {
@@ -51,7 +60,7 @@ public class Person {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
+
 	//Method Create, Read, Update, Delete
 	public String createData(ArrayList<Person> personList, Person person) {
 		try {
@@ -64,11 +73,11 @@ public class Person {
 	
 	public String readData(ArrayList<Person> personList) {
 		try {
-			String s="";
+			String cpm="";
 			for (Person person : personList) {
-				s += person.toString();
+				cpm += person.toString();
 			} 
-			return s;
+			return cpm;
 		}catch(Exception ex) {
 			return ex.getMessage();
 			
